@@ -13,3 +13,7 @@ percolate:migrations
 matb33:collection-hooks
 aldeed:collection2
 coffeescript
+twbs:bootstrap
+fortawesome:fontawesome
+less
+anti:modals

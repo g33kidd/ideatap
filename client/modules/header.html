@@ -1,0 +1,16 @@
+<template name="header">
+  <header class="main-header" id="header">
+    <div class="container">
+      <span class="site-name">
+        <span class="idea">idea</span><span class="tap">tap</span>
+      </span>
+      <div class="user">
+        {{#if currentUser}}
+          <img class="profile-image" src="{{profileImage}}">
+        {{else}}
+          {{> signup}}
+        {{/if}}
+      </div>
+    </div>
+  </header>
+</template>
