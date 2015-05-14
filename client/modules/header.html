@@ -6,7 +6,13 @@
       </span>
       <div class="user">
         {{#if currentUser}}
-          <img class="profile-image" src="{{profileImage}}">
+          <div class="profile">
+            <div class="meta pull-left">
+              <span class="name">{{currentUser.profile.name}}</span>
+              <a href="#" class="logout" id="logout">Logout</a>
+            </div>
+            {{> avatar user=currentUser shape="circle" class="profile-image pull-left"}}
+          </div>
         {{else}}
           {{> signup}}
         {{/if}}

@@ -1,11 +1,6 @@
 {
-	"apiKey": "example stuff",
-	"public": {
-		"groupId": "example",
-		"id": "example"
-	}
+    "twitter": {
+        "key": "dzQa4o7t49T76krpUhcHmVRzk",
+        "secret": "NW1Sa3h20t4jUHf1Z9VZ8TknjEdj2byaYttmIF7n8Ek4CCdyIP"
+    }
 }
-
-// Remove this comment and put settings in here.
-// Read more about settings here: 
-// http://docs.meteor.com/#/full/meteor_settings

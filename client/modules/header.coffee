@@ -1,6 +1,11 @@
+Template.header.events
+  'click #logout': (evt, tmpl) ->
+    Meteor.logout()
+    Router.go '/'
+
 Template.header.helpers
   profileImage: ->
-    "http://placehold.it/32x32"
+    getProfileImage(Meteor.userId())
 
 Template.signup.events
   'click #login': (evt, tmpl) ->

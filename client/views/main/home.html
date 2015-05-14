@@ -1,2 +1,25 @@
 <template name="home">
+
+  {{#unless currentUser}}
+    {{> welcomeHero}}
+  {{/unless}}
+
+  <div class="main-content">
+    <div class="container">
+
+      <div class="idea-listing">
+        {{#each ideas}}
+          {{> ideaHomeItem}}
+        {{/each}}
+      </div>
+
+    </div>
+  </div>
+
+</template>
+
+<template name="ideaHomeItem">
+  <div class="idea-post">
+    
+  </div>
 </template>

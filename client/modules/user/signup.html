@@ -8,16 +8,8 @@
 
 <template name="signupModal">
   <div class="anti-modal-box">
-    <div class="anti-modal-body">
-      Hahaha!
-    </div>
-  </div>
-</template>
-
-<template name="loginModal">
-  <div class="anti-modal-box">
     <div class="anti-modal-header">
-      <div class="anti-modal-title">Account Login</div>
+      <div class="anti-modal-title">Create an Account</div>
       <div class="anti-modal-closer">&times;</div>
     </div>
     <div class="anti-modal-body">
@@ -35,17 +27,18 @@
         </a>
 
         <div class="sep"></div>
-        <div class="section-title">Email &amp; Password</div>
-        <form id="loginForm">
-          <div class="form-inline">
-            <div class="form-group">
-              <input type="email" placeholder="Email Address" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-primary">Login</button>
+        <div class="section-title">Email &amp; Password Signup</div>
+        <form id="signupForm">
+          <div class="form-group">
+            <input type="text" placeholder="Name" class="form-control" name="name">
           </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" class="form-control" name="email">
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Password" class="form-control" name="password">
+          </div>
+          <button type="submit" class="btn btn-primary">Signup</button>
         </form>
 
       </div>
